@@ -1,0 +1,76 @@
+/* This is a comment */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* when padding and border are added it has no effect on width and height */
+}
+
+body {
+  background-color: #A7C6D9;
+  font-family: gotham, helvetica, verdana, sans-serif;
+  font-size: 16px;
+  color: #42708C;
+}
+
+header {
+  background-color: #202126;
+  color: #D9A404;
+  margin-bottom: 1em;
+  padding: 1em;
+  text-align: center;
+  border: solid 1em white;
+}
+
+h1 {
+  font-size: 4em;
+  font-family: garamond, times, serif;
+  text-transform: uppercase;
+  /* text-transform changes the style of the text in the h1 container */
+}
+
+/* be more specific (specificity) how to apply to two different headers */
+header h2 {
+  text-transform: uppercase;
+  font-style: oblique;
+  letter-spacing: .15em;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+article {
+  max-width: 1000px;
+  width: 100%;
+  /* center horizontal old school method below */
+  margin: 0 auto;
+}
+
+article h2 {
+  text-align: center;
+  /* will only affect the h2 header in the article specified */
+  text-transform: capitalize;
+  margin-bottom: .3em;
+}
+
+figure img {
+  width: 100%;
+}
+
+figure {
+  margin-bottom: 1em;
+}
+
+p {
+  margin-bottom: 1em;
+  line-height: 1.2em;
+}
+
+footer {
+  background-color: #202126;
+  color: #6588A6;
+  text-align:center;
+
+}

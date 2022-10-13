@@ -1,0 +1,293 @@
+/* This is a comment */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* when padding and border are added it has no effect on width and height */
+}
+
+body {
+  background-color: #A7C6D9;
+  font-family: gotham, helvetica, verdana, sans-serif;
+  font-size: 16px;
+  color: #42708C;
+}
+
+/* IDs start with a # and can only be used once per page */
+#tokyo {
+  background-color: #8C6D84;
+  color:#212426;
+}
+
+#osaka {
+  background-color: #A7C6D9;
+}
+
+#antwerp {
+  background-color: #D9B596;
+  color: #A64E65
+}
+
+#lyon {
+  background-color: #F2D4C9;
+  color: #8C3D2B;
+}
+
+
+header {
+  background-color: #202126;
+  color: #D9A404;
+  margin-bottom: 1em;
+  padding: 1em;
+  text-align: center;
+  border: solid 1em white;
+}
+
+h1 {
+  font-size: 4em;
+  font-family: garamond, times, serif;
+  text-transform: uppercase;
+  /* text-transform changes the style of the text in the h1 container */
+}
+
+/* be more specific (specificity) how to apply to two different headers */
+header h2 {
+  text-transform: uppercase;
+  font-style: oblique;
+  letter-spacing: .15em;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 1em;
+  background: #eee;
+}
+/* Nav tags order: LVHA -- Link Visited Hover Active */
+nav a:link{
+  background: #eee;
+  color: #333;
+  padding:.5em 1em;
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav a:visited{
+  color: #555;
+}
+
+nav a:hover{
+  background: #333;
+  color: #eee;
+  text-decoration: line-through;
+}
+
+nav a:active{
+  color: #98A62E;
+}
+
+nav a.current {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+article {
+  max-width: 1000px;
+  width: 100%;
+  /* center horizontal old school method below */
+  margin: 0 auto;
+}
+
+.col2 {
+  column-count: 2;
+  /* column-rule: solid 1px #777; */
+  /* adds a line in between the columns */
+  column-gap: 2em;
+}
+
+/* changes to apply to the two columns for styling */
+.col2 h2 {
+  text-align:left;
+  column-span:all;
+}
+
+article h2 {
+  text-align: center;
+  /* will only affect the h2 header in the article specified */
+  text-transform: capitalize;
+  margin-bottom: .3em;
+}
+
+figure {
+  margin-bottom: 1em;
+}
+
+figure img {
+  width:100%;
+}
+
+p {
+  margin-bottom: 1em;
+  line-height: 1.2em;
+}
+
+/* Clases start with a period and can be used many times on a page */
+p.pull_quote {
+  border-left: solid 1em #333;
+  padding: 1em;
+  margin: 0 2em .5em;
+  font-size: 2em;
+  font-style: italic;
+  font-family: serif;
+  background: url(../images/bg1.jpg) fixed;
+}
+
+p.pull_quote::before {
+  content: '“';
+}
+
+p.pull_quote::after {
+  content: '”';
+}
+
+p.pull_quote_ant {
+  border-left: solid 1em #333;
+  padding: 1em;
+  margin: 0 2em .5em;
+  font-size: 2em;
+  font-style: italic;
+  font-family: serif;
+  background: url(../images/bg5.jpg) fixed;
+}
+
+p.pull_quote_ant::before {
+  content: '“';
+}
+
+p.pull_quote_ant::after {
+  content: '”';
+}
+
+
+p.pull_quote_ly {
+  border-left: solid 1em #333;
+  padding: 1em;
+  margin: 0 2em .5em;
+  font-size: 2em;
+  font-style: italic;
+  font-family: serif;
+  background: url(../images/bg2.svg) fixed;
+}
+
+p.pull_quote_ly::before {
+  content: '“';
+}
+
+p.pull_quote_ly::after {
+  content: '”';
+}
+
+p.pull_quote_osa {
+  border-left: solid 1em #333;
+  padding: 1em;
+  margin: 0 2em .5em;
+  font-size: 2em;
+  font-style: italic;
+  font-family: serif;
+  background: url(../images/bg3.jpg) fixed;
+}
+
+p.pull_quote_osa::before {
+  content: '“';
+}
+
+p.pull_quote_osa::after {
+  content: '”';
+}
+
+
+article a:link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+article a:visited {
+  color: #fff;
+}
+
+article a:hover {
+  background: #333;
+  color: #eee;
+  text-decoration: line-through;
+}
+
+article a:active {
+  color: #98A62E;
+}
+
+
+
+section.divider {
+  background: url(../images/tokyometro.jpg) fixed no-repeat;
+  background-size: cover;
+  /* padding: 3em; */
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+section.divider h1 {
+  color: #eee;
+  font-family: Gotham, helvetica, verdana, sans-serif;
+  text-shadow: 4px 4px 5px #A895A8;
+}
+
+
+section.dividerantwerp {
+  background: url(../images/belgium.jpg) fixed no-repeat;
+  background-size: cover;
+  /* padding: 3em; */
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+section.dividerantwerp h1 {
+  color: #eee;
+  font-family: arial, helvetica, verdana, sans-serif;
+  text-shadow: 4px 4px 5px #A64E65;
+}
+
+section.dividerlyon {
+  background: url(../images/lyon.jpg) fixed no-repeat;
+  background-size: cover;
+  /* padding: 3em; */
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+section.dividerlyon h1 {
+  color: #eee;
+  font-family: arial, helvetica, verdana, sans-serif;
+  text-shadow: 4px 4px 5px #BF3706;
+}
+
+section.dividerosaka {
+  background: url(../images/osakastn.jpg) fixed no-repeat;
+  background-size: cover;
+  /* padding: 3em; */
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+section.dividerosaka h1 {
+  color: #eee;
+  font-family: arial, helvetica, verdana, sans-serif;
+  text-shadow: 4px 4px 5px #3B6D8C;
+}
+
+
+footer {
+  background-color: #202126;
+  /* color: #6588A6; */
+  color: #8992AF;
+  text-align:center;
+
+}
